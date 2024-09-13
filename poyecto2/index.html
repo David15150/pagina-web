@@ -40,22 +40,33 @@
                         </div>
                     </div>
 
-                    <div id="cart" class="cart">
-                        <h2>Carrito de Compras</h2>
-                        <ul id="cart-items"></ul>
-                        <p>Total: $<span id="total-price">0</span></p>
-                    </div>
-
                     <div class="header-img">
                         <img src="images/Wraps.avif" class="hamburguer" alt="hamburguer">
                     </div>
+
                 </div>
+
             </div>
         </header>
     </div>
 
     
     <main id="Productos"  class="product-menu">
+
+        <div id="cart-container">
+            <button id="toggle-cart" class="btn-1">Mostrar Carrito</button>
+            <div id="cart" class="cart">
+                <h2>Carrito de Compras</h2>
+                <ul id="cart-items"></ul>
+                <p>Total: $<span id="total-price">0.00</span></p>
+            </div>
+        </div>
+        
+        
+        
+        
+
+
         <div class="container">
 
             <div class="product">
@@ -83,7 +94,7 @@
                             </p>
                             <div class="icons">
                                 <span class="price">$15</span>
-                                <button class="buy" onclick="addToCart('Croaissants',)"><img src="images/car.svg" alt="">añadir al carrito</button>
+                                <button class="buy" onclick="addToCart('Croaissants',15)"><img src="images/car.svg" alt="">añadir al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -98,8 +109,8 @@
                                 Un abrazo de sabor entre dos rebanadas de pan dorado. Nuestros paninis combinan ingredientes frescos y sabores que se funden en cada bocado
                             </p>
                             <div class="icons">
-                                <span class="price">$15</span>
-                                <button class="buy" onclick="addToCart('Paninis')"><img src="images/car.svg" alt="">añadir al carrito</button>
+                                <span class="price">$32</span>
+                                <button class="buy" onclick="addToCart('Paninis',32)"><img src="images/car.svg" alt="">añadir al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -114,8 +125,8 @@
                                 Un placer dulce para tus sentidos. Nuestros pasteles y tartas son una sinfonía de texturas y sabores, una indulgencia que mereces 
                             </p>
                             <div class="icons">
-                                <span class="price">$15</span>
-                                <button class="buy" onclick="addToCart('Pasteles y Tartas')"><img src="images/car.svg" alt="">añadir al carrito</button>
+                                <span class="price">$18</span>
+                                <button class="buy" onclick="addToCart('Pasteles y Tartas',18)"><img src="images/car.svg" alt="">añadir al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -130,8 +141,8 @@
                                 Jugosos y tentadores, nuestros muffins son una explosión de sabor en cada porción. Un capricho perfecto para cualquier momento del día 
                             </p>
                             <div class="icons">
-                                <span class="price">$15</span>
-                                <button class="buy" onclick="addToCart('Muffins')"><img src="images/car.svg" alt="">añadir al carrito</button>
+                                <span class="price">$21</span>
+                                <button class="buy" onclick="addToCart('Muffins',21)"><img src="images/car.svg" alt="">añadir al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -146,8 +157,8 @@
                                 Crujientes por fuera, suaves por dentro, nuestras galletas son un bocado de felicidad. Sumérgete en la satisfacción de cada mordida.
                             </p>
                             <div class="icons">
-                                <span class="price">$15</span>
-                                <button class="buy" onclick="addToCart('Galletas')"><img src="images/car.svg" alt="">añadir al carrito</button>
+                                <span class="price">$19</span>
+                                <button class="buy" onclick="addToCart('Galletas',19)"><img src="images/car.svg" alt="">añadir al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -162,8 +173,8 @@
                                 Un mundo de opciones en cada bocado. Nuestros bocadillos son la combinación ideal de sabores frescos y creatividad culinaria.
                             </p>
                             <div class="icons">
-                                <span class="price">$15</span>
-                                <button class="buy" onclick="addToCart('Bocadillos')"><img src="images/car.svg" alt="">añadir al carrito</button>
+                                <span class="price">$12</span>
+                                <button class="buy" onclick="addToCart('Bocadillos',12)"><img src="images/car.svg" alt="">añadir al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -179,7 +190,7 @@
                             </p>
                             <div class="icons">
                                 <span class="price">$15</span>
-                                <button class="buy" onclick="addToCart('Quiches')"><img src="images/car.svg" alt="">añadir al carrito</button>
+                                <button class="buy" onclick="addToCart('Quiches',15)"><img src="images/car.svg" alt="">añadir al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -219,8 +230,8 @@
                             La esencia concentrada del café, el ristretto te ofrece un golpe de sabor audaz en una pequeña dosis. Un placer intenso para los amantes del café fuerte
                         </p>
                         <div class="icons">
-                            <span class="price">$15</span>
-                            <button class="buy" onclick="addToCart('Ristretto')"><img src="images/car.svg" alt="">añadir al carrito</button>
+                            <span class="price">$20</span>
+                            <button class="buy" onclick="addToCart('Ristretto',20)"><img src="images/car.svg" alt="">añadir al carrito</button>
                         </div>
                     </div>
                 </div>
@@ -235,8 +246,8 @@
                             Una explosión de intensidad en cada gota, el expreso te envuelve con su aroma seductor y sabor profundo. Un viaje rápido al corazón del café. 
                         </p>
                         <div class="icons">
-                            <span class="price">$15</span>
-                            <button class="buy" onclick="addToCart('ExpressoCafé')"><img src="images/car.svg" alt="">añadir al carrito</button>
+                            <span class="price">$17</span>
+                            <button class="buy" onclick="addToCart('ExpressoCafé',17)"><img src="images/car.svg" alt="">añadir al carrito</button>
                         </div>
                     </div>
                 </div>
@@ -251,8 +262,8 @@
                             El equilibrio perfecto entre la intensidad del café y la suavidad de la leche. Un sorbo que te acaricia con su sabor y te despierta con energía
                         </p>
                         <div class="icons">
-                            <span class="price">$15</span>
-                            <button class="buy" onclick="addToCart('Cortado')"><img src="images/car.svg" alt="">añadir al carrito</button>
+                            <span class="price">$16</span>
+                            <button class="buy" onclick="addToCart('Cortado',16)"><img src="images/car.svg" alt="">añadir al carrito</button>
                         </div>
                     </div>
                 </div>
@@ -268,7 +279,7 @@
                         </p>
                         <div class="icons">
                             <span class="price">$15</span>
-                            <button class="buy" onclick="addToCart('Americano')"><img src="images/car.svg" alt="">añadir al carrito</button>
+                            <button class="buy" onclick="addToCart('Americano',15)"><img src="images/car.svg" alt="">añadir al carrito</button>
                         </div>
                     </div>
                 </div>
@@ -283,8 +294,8 @@
                             Un toque audaz al café, el carajillo fusiona la calidez del café con la energía del licor. Un deleite perfecto para elevar tus momentos especiales 
                         </p>
                         <div class="icons">
-                            <span class="price">$15</span>
-                            <button class="buy" onclick="addToCart('Carajillo')"><img src="images/car.svg" alt="">añadir al carrito</button>
+                            <span class="price">$8</span>
+                            <button class="buy" onclick="addToCart('Carajillo',8)"><img src="images/car.svg" alt="">añadir al carrito</button>
                         </div>
                     </div>
                 </div>
@@ -299,8 +310,8 @@
                             La armonía entre la fuerza del café y la suavidad de la leche. Un abrazo reconfortante en cada sorbo, que te envuelve en una sensación de calidez.s 
                         </p>
                         <div class="icons">
-                            <span class="price">$15</span>
-                            <button class="buy" onclick="addToCart('Cafe con leche')"><img src="images/car.svg" alt="">añadir al carrito</button>
+                            <span class="price">$10</span>
+                            <button class="buy" onclick="addToCart('Cafe con leche',10)"><img src="images/car.svg" alt="">añadir al carrito</button>
                         </div>
                     </div>
                 </div>
@@ -315,8 +326,8 @@
                             Dulzura y amargura en equilibrio perfecto. El café bombón es un juego de contrastes que te cautiva desde el primer sorbo. 
                         </p>
                         <div class="icons">
-                            <span class="price">$15</span>
-                            <button class="buy" onclick="addToCart('Cafe Bombón')"><img src="images/car.svg" alt="">añadir al carrito</button>
+                            <span class="price">$14</span>
+                            <button class="buy" onclick="addToCart('Cafe Bombón',14)"><img src="images/car.svg" alt="">añadir al carrito</button>
                         </div>
                     </div>
                 </div>
@@ -332,7 +343,7 @@
                         </p>
                         <div class="icons">
                             <span class="price">$15</span>
-                            <button class="buy" onclick="addToCart('Capuchino')"><img src="images/car.svg" alt="">añadir al carrito</button>
+                            <button class="buy" onclick="addToCart('Capuchino',15)"><img src="images/car.svg" alt="">añadir al carrito</button>
                         </div>
                     </div>
                 </div>
@@ -356,8 +367,8 @@
                                 La corona perfecta para tus momentos de placer. Nuestra crema batida es suavidad y indulgencia en cada cucharada, un regalo para tus papilas gustativas 
                             </p>
                             <div class="icons">
-                                <span class="price">$15</span>
-                                <button class="buy" onclick="addToCart('CremaBatida')"><img src="images/car.svg" alt="">añadir al carrito</button>
+                                <span class="price">$12</span>
+                                <button class="buy" onclick="addToCart('CremaBatida',12)"><img src="images/car.svg" alt="">añadir al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -372,8 +383,8 @@
                                 Delicado y tentador, nuestro chocolate rallado es el toque final que convierte lo ordinario en extraordinario. Un esparcimiento de placer en cada bocado
                             </p>
                             <div class="icons">
-                                <span class="price">$15</span>
-                                <button class="buy" onclick="addToCart('Chocolate Rallado')"><img src="images/car.svg" alt="">añadir al carrito</button>
+                                <span class="price">$16</span>
+                                <button class="buy" onclick="addToCart('Chocolate Rallado',16)"><img src="images/car.svg" alt="">añadir al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -388,8 +399,8 @@
                                 Personaliza tu dulzura. Nuestra variedad de azúcares y edulcorantes te permite encontrar el equilibrio perfecto entre el gusto y la salud, para una experiencia a medida.
                             </p>
                             <div class="icons">
-                                <span class="price">$15</span>
-                                <button class="buy" onclick="addToCart('Azúcares y Edulcorantes')"><img src="images/car.svg" alt="">añadir al carrito</button>
+                                <span class="price">$11</span>
+                                <button class="buy" onclick="addToCart('Azúcares y Edulcorantes',11)"><img src="images/car.svg" alt="">añadir al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -405,7 +416,7 @@
                             </p>
                             <div class="icons">
                                 <span class="price">$15</span>
-                                <button class="buy" onclick="addToCart('Alternativas de leche')"><img src="images/car.svg" alt="">añadir al carrito</button>
+                                <button class="buy" onclick="addToCart('Alternativas de leche'),15"><img src="images/car.svg" alt="">añadir al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -538,7 +549,14 @@
     </footer>
 
     <script src="script.js"></script>
-    
+    <script src="cart.js"></script>
+
+    <script src="api.js"></script>
+    <script src="app.js"></script>
+    <script src="ItemForm.js"></script>
+    <script src="ItemLists.js"></script>
+    <script src="Tabla.js"></script>
+
     <script src="bootstrap/js/jqury.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>

@@ -1,6 +1,9 @@
+export default App;
+
+
 import axios from 'axios';
 
-const API_URL = 'https://api.example.com/items';
+const API_URL = 'http://localhost/phpmyadmin/';
 
 export const fetchItems = async () => {
   const response = await axios.get(API_URL);
