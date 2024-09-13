@@ -2,6 +2,11 @@ html {
     height: 100%;
 }
 
+.error {
+    border: 2px solid red;
+}
+
+
 body {
     margin: 0;
     padding: 0;

@@ -14,20 +14,20 @@
     <div class="login-box">
         <h2>Bienvenido</h2>
 
-        <form >
+        <form id="formulario2">
 
             <div class="user-box">
-                <input type="text" name="" required="">
-                <label >Nombre y Apellido</label>
+                <input type="text" name="nombre" required="">
+                <label>Nombre y Apellido</label>
             </div>
 
             <div class="user-box">
-                <input type="text" name="" required="">
-                <label >correo electrónico</label>
+                <input type="email" name="correo" required="">
+                <label>Correo Electrónico</label>
             </div>
 
             <div class="elección">
-                <h3>Genero</h3>
+                <h3>Género</h3>
                 <input type="radio" id="Masculino" name="genero" value="Masculino">
                 <label for="Masculino">Masculino</label><br>
 
@@ -35,26 +35,28 @@
                 <label for="Femenino">Femenino</label><br>
 
                 <input type="radio" id="Otro" name="genero" value="Otro">
-                <label for="Otro">Otro genero</label><br>
-
+                <label for="Otro">Otro género</label><br>
             </div>
 
-            <a href="index.html">
+            <a href="#" id="enviarBtn">
                 <span></span>
                 <span></span>
                 <span></span>
-                <span></span>enviar
-                
-                <a href="formulario2.html" id="reset-link">Eliminar</a>
-
+                <span></span>Enviar
             </a>
 
-            
+            <a href="#" id="eliminarBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>Eliminar
+            </a>
 
         </form>
 
     </div>
 
+    <script src="Formulario.js"></script>
 
 </body>
 
