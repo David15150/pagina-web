@@ -83,3 +83,14 @@ loadMoreBtn3.onclick =()=> {
     }
 }
 
+document.getElementById('comprarBtn').addEventListener('click', function() {
+    alert('Producto añadido al carrito.');
+    // Aquí puedes agregar la lógica para añadir el producto al carrito
+});
+
+document.getElementById('infoBtn').addEventListener('click', function() {
+    alert('Más información sobre el producto.');
+    // Aquí puedes redirigir a una página de información o mostrar un modal con más detalles
+});
+
+
